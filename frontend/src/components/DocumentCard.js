@@ -1,6 +1,11 @@
 import React from "react";
 
 function DocumentCard({ doc }) {
+  // Fix invalid date issue
+  const uploadedAt = doc.uploaded_at
+    ? new Date(doc.uploaded_at).toLocaleString()
+    : "Just now";
+
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 transition hover:shadow-xl">
       {/* File Name */}
@@ -11,9 +16,7 @@ function DocumentCard({ doc }) {
       {/* Upload Time */}
       <p className="text-sm text-gray-500 mt-1">
         Uploaded on:{" "}
-        <span className="font-medium">
-          {new Date(doc.uploaded_at).toLocaleString()}
-        </span>
+        <span className="font-medium">{uploadedAt}</span>
       </p>
 
       {/* AI Summary or Fallback */}
@@ -28,7 +31,7 @@ function DocumentCard({ doc }) {
         <div className="mt-4 bg-gray-100 p-4 rounded-lg border-l-4 border-gray-400">
           <p className="text-gray-700 leading-relaxed">
             <span className="font-semibold text-gray-700">Fallback Words: </span>
-            {doc.fallback_words}
+            {doc.fallback_words || "Not available"}
           </p>
         </div>
       )}
