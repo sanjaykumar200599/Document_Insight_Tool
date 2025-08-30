@@ -29,4 +29,11 @@ async def upload_resume(file: UploadFile = File(...), db: Session = Depends(get_
     )
     doc = crud.create_document(db, doc_data)
 
-    return {"message": "File processed successfully", "document": doc}
+    # ✅ Return JSON response with proper fields
+    return {
+        "id": doc.id,
+        "filename": doc.filename,
+        "summary": doc.summary,
+        "fallback_words": doc.fallback_words,
+        "uploaded_at": doc.uploaded_at.isoformat()
+    }
