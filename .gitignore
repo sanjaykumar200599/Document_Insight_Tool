@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+.env
+venv/
+.env/
+.venv/
+
+# SQLite database
+documents.db
+
+# Logs
+*.log
+
+# Virtual environment
+venv/
+ENV/
+env/
+*.env
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
+# Node.js (React frontend)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Build output
+frontend/build/
+frontend/.cache/
+dist/
+*.tar.gz
+
+# Mac / Linux system files
+.DS_Store
+Thumbs.db
