@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import DocumentCard from "../components/DocumentCard";
 
-const API_BASE = "https://document-insight-tool.onrender.com/";
+const API_BASE = "http://127.0.0.1:8000";
 
 function HistoryPage() {
   const [documents, setDocuments] = useState([]);

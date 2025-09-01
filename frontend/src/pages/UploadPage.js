@@ -23,7 +23,7 @@ function UploadPage() {
 
     try {
       const response = await axios.post(
-        "https://document-insight-tool.onrender.com/",
+        "http://127.0.0.1:8000",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );

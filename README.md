@@ -27,6 +27,16 @@ If the AI service is unavailable, the system gracefully falls back to the **top 
 
 ---
 
+## Images
+
+<img width="1870" height="883" alt="Image" src="https://github.com/user-attachments/assets/0cbcb01d-8f4b-4365-8fd1-f9493aa9d18d" />
+
+
+<img width="1788" height="883" alt="Image" src="https://github.com/user-attachments/assets/0e62bde8-a45e-46aa-a4c8-238d550fe759" />
+
+---
+
+
 ## ⚙️ Setup Instructions
 
 ### 🔹 Backend (FastAPI)
@@ -85,3 +95,5 @@ Add authentication for multi-user history
 
 Improve AI summarization with more advanced models
 ```
+
+
